@@ -16,9 +16,10 @@
                 <li><a href="Postre.php">Postres</a></li>
                 <li><a href="Bebidas.php">Bebidas</a></li>
                 <li><a href="Combos.php">Combos</a></li>
-				<li><a href="Cree su Orden.php">Cree su Orden</a></li>
+				<li><a href="Cree su Orden-php">Cree su Orden</a></li>
 			</ul>
 		</nav>
-	</header>
+    </header>
+    Somos una empresa que gestiona la entrega de comida rapida a domicilio, rapides calidad y confianza es nuestro lema
 </body>
 </html>

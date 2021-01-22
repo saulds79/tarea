@@ -19,6 +19,6 @@
 				<li><a href="Cree su Orden.php">Cree su Orden</a></li>
 			</ul>
 		</nav>
-	</header>
+    </header>
 </body>
 </html>
