@@ -9,20 +9,21 @@
 	<header>
 		<nav class="navegacion">
 			<ul class="menu">
-				<li><a href="Registro.php">Registro</a></li>
-				<li><a href="Nosotros.php">Nosotros</a></li>
-                <li><a href="Hamburguesas.php">Hamburguesas</a></li>
-				<li><a href="Pizza.php">Pizza</a></li>
-                <li><a href="Postre.php">Postres</a></li>
-                <li><a href="Bebidas.php">Bebidas</a></li>
-                <li><a href="Combos.php">Combos</a></li>
-				<li><a href="Cree su Orden.php">Cree su Orden</a></li>
+		
+	    <li><a href="Nosotros.php">Nosotros</a></li>
+        <li><a href="Hamburguesas.php">Hamburguesas</a></li>
+		<li><a href="Pizza.php">Pizza</a></li>
+        <li><a href="Postre.php">Postres</a></li>
+        <li><a href="Bebidas.php">Bebidas</a></li>
+		<li><a href="Cree su Orden.php">Cree su Orden</a></li>
 			</ul>
 		</nav>
 	</header>
 
 
 <center>
+
+
 <br><label for="so1">HAMBURGUESAS</label> <br/>
 <br>
 <select name="HAMBURGUESAS">
@@ -30,12 +31,11 @@
 <option>Cuarto De Libra Con Queso</option>
 <option>Double Cheeseburger</option>
 <option>Cheeseburger</option>
-<option>Quarter Pounder®* with Cheese Bacon</option>
-<option>McDouble®</option>
-<option>Quarter Pounder®* Deluxe</option>
-<option>Big Mac®</option>
+<option>Quarter Pounder with Cheese Bacon</option>
+<option>McDouble</option>
 <option>La Kiwi Burger</option>
-<option>LA Mcarabia</option>
+<option>La Mcarabia</option>
+<option>Ninguna</option>
 </select>
 </br>
 
@@ -54,20 +54,25 @@
   <option>Continental</option>
   <option>Vegetariana</option>
   <option>Chicken BBQ</option>
+  <option>Ninguna</option>
 </select>
 </br>
+
+
 
 
 <br><label for="so3">POSTRES</label><br/>
 <br>
 <select name="POSTRES">
-<option selected>Galleta Hershey's</option>
-<option>Tarta de Manzana</option>
+<option selected>Sundae De Manjar Blanco</option>
+<option>MCflurry Oreo</option>
 <option>Tarta de Freza</option>
 <option>Torta de Selva Negra</option>
 <option>Volcan de Limon</option>
 <option>Helado de Vainilla</option>
 <option>Ensalada de Frutas</option>
+<option>Hot Caramel Sundae</option>
+<option>Ninguna</option>
 </select>
 </br>
 
@@ -75,16 +80,19 @@
 <br>
 <select name="BEBIDAS">
 <option selected>Caramel Frappe</option>
-<option>Latte</option>
+<option>Cafe</option>
 <option>Cappuccino</option>
 <option>Mocha</option>
 <option>Caramel</option>
 <option>Mango Piña</option>
-<option>Mocha Frappe</option>
+<option>Iced Caramel Macchiato</option>
 <option>Strawberry Banana</option>
+<option>Ninguna</option>
 </select>
 </br>
+
 </center>
+
 
 </body>
 </html>
