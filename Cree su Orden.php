@@ -22,8 +22,12 @@
 
 
 <center>
+ 
 
-
+<form action="formpost.php" method="post">
+<br>
+<p>Fecha: <input type="date" name="fecha">    
+<br/>
 <br><label for="so1">HAMBURGUESAS</label> <br/>
 <br>
 <select name="HAMBURGUESAS">
@@ -90,7 +94,9 @@
 <option>Ninguna</option>
 </select>
 </br>
-
+<br>
+<input type="submit" value="Ordenar"></p>
+</br></form>
 </center>
 
 
