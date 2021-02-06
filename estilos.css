@@ -20,6 +20,9 @@ header{
 	background: rgb(243, 113, 6);
 }
 
+
+
+
 .navegacion ul{
 	list-style: none;
 }
@@ -42,4 +45,30 @@ header{
 	transition: all .3s;
 }
 
+.navegacion1{
+	width: 300px;
+    margin: 30px auto;
+	background: rgb(243, 113, 6);
+}
 
+.navegacion1 ul{
+	list-style: none;
+}
+
+.menu1 > li{
+	position: relative;
+	display: inline-block;
+}
+
+.menu1 > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: #ece5e5;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.menu1 li a:hover{
+	color: #e62c14;
+	transition: all .3s;
+}

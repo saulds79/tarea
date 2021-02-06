@@ -15,7 +15,7 @@
 				<li><a href="Pizza.php">Pizza</a></li>
         <li><a href="Postre.php">Postres</a></li>
         <li><a href="Bebidas.php">Bebidas</a></li>
-				<li><a href="Cree su Orden.php">Cree su Orden</a></li>
+				<li><a href="mysqltest.php.php">Cree su Orden</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -81,10 +81,12 @@
       </tr>
 	
 	<tr>	
-  <td><img src="img/EnsaladadeFrutas.jpg" WIDTH=178 HEIGHT=180></td>
+  <td><img src="img/VolcandeLimon.jpg" WIDTH=178 HEIGHT=180></td>
 	<td><img src="img/HeladodeVainilla.jpg" WIDTH=178 HEIGHT=180></td>
-	<td><img src="img/HotCaramelSundae.jpg" WIDTH=178 HEIGHT=180></td>
-	<td><img src="img/VolcandeLimon.jpg" WIDTH=178 HEIGHT=180></td>
+  <td><img src="img/EnsaladadeFrutas.jpg" WIDTH=178 HEIGHT=180></td>
+  <td><img src="img/HotCaramelSundae.jpg" WIDTH=178 HEIGHT=180></td>
+  
+	
     </tr>
     </table>
 

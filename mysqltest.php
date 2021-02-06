@@ -2,6 +2,25 @@
 <html>
 <link rel="stylesheet" href="estilos.css">
 <body>
+<header>
+		<nav class="navegacion">
+			<ul class="menu">
+		
+	    <li><a href="Nosotros.php">Nosotros</a></li>
+        <li><a href="Hamburguesas.php">Hamburguesas</a></li>
+		<li><a href="Pizza.php">Pizza</a></li>
+        <li><a href="Postre.php">Postres</a></li>
+        <li><a href="Bebidas.php">Bebidas</a></li>
+		<li><a href="Cree su Orden.php">Cree su Orden</a></li>
+		</ul>
+        </nav>
+
+        <nav class="navegacion1">
+        <ul class="menu1" ><li><a href="mysqltest1.php"><center>Ver el Diseño fallido</center></a></li></ul>
+        </nav>
+
+
+	</header>
 <center>
 <?php 
     require_once 'cargar.php';
@@ -18,18 +37,18 @@
     }
 
     if (isset($_POST['fecha']) &&
-        isset($_POST['hamburguesas']) &&
-        isset($_POST['pizza']) &&
-        isset($_POST['postres']) &&
-        isset($_POST['bebidas']) )
+        isset($_POST['HAMBURGUESAS']) &&
+        isset($_POST['PIZZA']) &&
+        isset($_POST['POSTRES']) &&
+        isset($_POST['BEBIDAS']) )
     {
         $fecha = get_post($conexion, 'fecha');
-        $hamburguesas = get_post($conexion, 'hamburguesas');
-        $pizza = get_post($conexion, 'pizza');
-        $postres = get_post($conexion, 'postres');
-        $bebidas = get_post($conexion, 'bebidas');
+        $HAMBURGUESAS = get_post($conexion, 'HAMBURGUESAS');
+        $PIZZA = get_post($conexion, 'PIZZA');
+        $POSTRES = get_post($conexion, 'POSTRES');
+        $BEBIDAS = get_post($conexion, 'BEBIDAS');
         $query = "INSERT INTO registro VALUE" .
-            "('$fecha','$hamburguesas' ,'$pizza','$postres','$bebidas')";
+            "('$fecha','$HAMBURGUESAS' ,'$PIZZA','$POSTRES','$BEBIDAS')";
         $result = $conexion->query($query);
         if (!$result) echo "INSERT falló <br><br>";
     }
@@ -39,12 +58,13 @@
          
           
         <br>Fecha <input type="date" name="fecha"></br>
-        <br>Hamburguesas <input type="text" name= "hamburguesas"></br>
-        <br>Pizza <input type="text" name= "pizza"></br>
-        <br>Postres <input type="text" name= "postres"></br>
-        <br>Bebidas <input type="text" name="bebidas"></br>
+        <br>HAMBURGUESAS <input type="select" name= "HAMBURGUESAS"></br>
+        <br>PIZZA <input type="select" name= "PIZZA"></br>
+        <br>POSTRES <input type="select" name= "POSTRES"></br>
+        <br>BEBIDAS <input type="select" name= "BEBIDAS"></br>
 
-    <input type="submit" value="ESCRBIR">
+
+    <input type="submit" value="Ordenar">
     </pre></form>
     _END;
 
@@ -68,10 +88,10 @@
 
         <pre>
         FECHA: $r0
-        HAMBURGUESA: $r1
-        PIZZA: $r2
+        HAMBURGUESAS: $r1
+        PIZZA: $r2  
         POSTRES: $r3
-        BEBIDAS: $r4 
+        BEBIDAS: $r4  
         
         </pre>
         
@@ -90,6 +110,19 @@
     {
         return $con->real_escape_string($_POST[$var]);
     }
+
+
+
+    function mysql_entities_fix_string($conexion, $string)
+    {
+        return htmlentities(mysql_fix_string($conexion, $string));
+      }
+    function mysql_fix_string($conexion, $string)
+    {
+        if (get_magic_quotes_gpc()) $string = stripslashes($string);
+        return $conexion->real_escape_string($string);
+      }  
+
 ?>
 </center>
 

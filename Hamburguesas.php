@@ -15,7 +15,7 @@
 				<li><a href="Pizza.php">Pizza</a></li>
         <li><a href="Postre.php">Postres</a></li>
         <li><a href="Bebidas.php">Bebidas</a></li>
-				<li><a href="Cree su Orden.php">Cree su Orden</a></li>
+				<li><a href="mysqltest.php">Cree su Orden</a></li>
 			</ul>
 		</nav>
 	</header>

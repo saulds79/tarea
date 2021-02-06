@@ -1,6 +1,6 @@
 <?php
  $hn = 'localhost';
- $db = 'comidarapida';
+ $db = 'comida';
  $un = 'root';
  $pw = '';
  $port = 3306;
